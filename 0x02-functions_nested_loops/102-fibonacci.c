@@ -9,22 +9,25 @@
 
 int main(void)
 {
-	int count;
+	long int i, j, k, next;
 
-	unsigned long f1 = 0, f2 = 1, sum;
+	j = 1;
 
-	for (count = 0; count < 50; count++)
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
 	{
-		sum = f1 + f2;
-		printf("%lu", sum);
-
-		f1 = f2;
-		f2 = sum;
-
-		if (count == 49)
-			printf("\n");
-		else
-			printf(",");
+		if (j != 20365011074)
+		{
+			printf("%ld, ", j);
+		} else
+		{
+			printf("%ld\n", j);
+		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
+
 	return (0);
 }
