@@ -1,34 +1,20 @@
 #include "main.h"
-
 /**
- * puts2 - print pair values
- * @str: value to be evaluated
- * Return: not
+ * puts2 - This function prints every character of an even string
+ *
+ * @str: The string parameter input
+ *
+ * Return: Noting
  */
-
 void puts2(char *str)
 {
-	int len = 0;
+		int prt;
 
-	int l = 0;
-
-	char *y = str;
-
-	int z;
-
-	while (*y != '\0')
+	for (prt = 0; str[prt] != '\0'; prt++)
 	{
-		y++;
+		if (prt % 2 == 0)
+		_putchar(str[prt]);
 
-		len++;
-	}
-	l = len - 1;
-	for (z = 0; z <= 1; z++)
-	{
-		if (z % 2 == 0)
-		{
-			_putchar(str[z]);
-		}
 	}
 	_putchar('\n');
 }
