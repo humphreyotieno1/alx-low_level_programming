@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * sum_dlistint - return sum of data in doubly linked list
+ * sum_dlistint - sum of data (n) in
+ * doubly linked list
  * @head: head of list
- * @Return: sum of data
+ * @Return: sum of the data
  */
 
 int sum_dlistint(dlistint_t *head)
