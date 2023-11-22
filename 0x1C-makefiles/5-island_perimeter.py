@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Define a function to find perimeter of an island"""
 
+
 def island_perimeter(grid):
     """Returns perimeter of the island
-    
+
     Args:
         grid (list): list of ints rep the island
     """
